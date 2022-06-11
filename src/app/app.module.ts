@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
 import { CityComponent } from './city/city.component'
 import { CityDetailComponent } from './city/CityDetail/CityDetail.component';
+import { CityAddComponent } from './city/CityAdd/CityAdd.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CityDetailComponent } from './city/CityDetail/CityDetail.component';
     ValueComponent,
     NavComponent,
     CityComponent,
-    CityDetailComponent
+    CityDetailComponent,
+    CityAddComponent
   ],
   imports: [
     BrowserModule,

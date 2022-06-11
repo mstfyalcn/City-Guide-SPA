@@ -28,4 +28,8 @@ getPhotosByCity(cityId:number):Observable<Photo[]>{
   return this.http.get<Photo[]>(this.path + "cities/photos/?cityId="+cityId); 
 }
 
+
+add(city:City){
+  this.http.post(this.path+"city/add",city).subscribe()}
+
 }
