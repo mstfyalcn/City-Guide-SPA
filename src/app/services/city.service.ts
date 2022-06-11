@@ -15,17 +15,17 @@ path="http://localhost:61061/api/"
 cities:City[]=[]
 
 getCities():Observable<City[]>{
-return this.http.get<City[]>(this.path+ "cities" )
+return this.http.get<City[]>(this.path+ "cities" );
 };
 
 getCityById(cityId:number):Observable<City>{
-  return this.http.get<City>(this.path + "cities/detail/?id="+cityId)
+  return this.http.get<City>(this.path + "cities/detail/?id="+cityId);
 
 }
 
-getPhotosById(cityId:number):Observable<Photo[]>{
+getPhotosByCity(cityId:number):Observable<Photo[]>{
 
-  return this.http.get<Photo[]>(this.path + "cities/photos/?cityId="+cityId) 
+  return this.http.get<Photo[]>(this.path + "cities/photos/?cityId="+cityId); 
 }
 
 }
